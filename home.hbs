@@ -1,0 +1,29 @@
+{{!< default}}
+
+{{!-- Wordmark text is set here (and in partials/header.hbs). If you rename the site, update both. --}}
+<section class="masthead">
+    <div class="plate">
+        {{#if @custom.masthead_kicker}}<div class="plate-kicker">{{@custom.masthead_kicker}}</div>{{/if}}
+        <h1 class="plate-name">Crooked<br><span class="accent">Nightstand</span></h1>
+        <div class="plate-foot">
+            <span>Est. {{@custom.established}}</span>
+            <i aria-hidden="true"></i>
+            <span>Short Fiction</span>
+        </div>
+    </div>
+    {{#if @custom.masthead_intro}}<p class="masthead-intro">{{@custom.masthead_intro}}</p>{{/if}}
+</section>
+
+<section class="story-index">
+    <div class="shelf-folio">
+        <span class="shelf-date" data-today>Short Fiction</span>
+        <span class="shelf-stats" data-shelf></span>
+    </div>
+    <div class="story-list">
+        {{#foreach posts}}
+            {{> "story-card"}}
+        {{/foreach}}
+    </div>
+</section>
+
+{{pagination}}

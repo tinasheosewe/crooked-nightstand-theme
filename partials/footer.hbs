@@ -1,0 +1,13 @@
+<footer class="site-footer">
+    <div class="site-footer-inner">
+        <div class="site-footer-orn" aria-hidden="true"><i></i><i></i><i></i></div>
+        <p class="site-footer-credit">
+            {{#if @custom.footer_signature}}{{@custom.footer_signature}}{{else}}&copy; <span data-year>2026</span> {{@site.title}}{{/if}}
+        </p>
+        <p class="site-footer-meta">
+            <a href="{{@site.url}}">{{@site.title}}</a>
+            <span class="sep" aria-hidden="true"></span> Short fiction
+            {{#if @site.members_enabled}}<span class="sep" aria-hidden="true"></span> <a href="#/portal/signup" data-portal="signup">Subscribe</a>{{/if}}
+        </p>
+    </div>
+</footer>

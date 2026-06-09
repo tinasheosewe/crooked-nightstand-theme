@@ -1,0 +1,19 @@
+{{!-- Wordmark text is set here (and in home.hbs). If you rename the site, update both. --}}
+<header class="site-header" data-site-header>
+    <div class="site-header-inner">
+        <a class="site-mark" href="{{@site.url}}">Crooked <span class="accent">Nightstand</span></a>
+
+        <div class="header-now" data-header-now aria-hidden="true">
+            <span class="header-now-title"></span>
+            <span class="header-now-time"></span>
+        </div>
+
+        <nav class="site-nav" aria-label="Primary">
+            {{navigation}}
+            <button class="theme-toggle" type="button" aria-label="Toggle colour scheme" data-theme-toggle>
+                <svg class="icon-sun" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.25"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M4.9 4.9l1.6 1.6M17.5 17.5l1.6 1.6M19.1 4.9l-1.6 1.6M6.5 17.5l-1.6 1.6"/></svg>
+                <svg class="icon-moon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.4A8 8 0 1 1 9.6 4 6.5 6.5 0 0 0 20 14.4Z"/></svg>
+            </button>
+        </nav>
+    </div>
+</header>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Crooked Nightstand — Direction 02 · Lamplight</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Newsreader:ital,opsz,wght@0,6..72,300..500;1,6..72,300..500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#15110B; --raise:#1E1810; --ink:#ECE1CC; --soft:#C3B59B; --muted:#94856C;
+    --accent:#E3A044; --accent-deep:#C9852B; --rule:#2C2418;
+    --display:"Hedvig Letters Serif",Georgia,serif; --body:"Newsreader",Georgia,serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--ink);font-family:var(--body);line-height:1.7;
+    -webkit-font-smoothing:antialiased;padding-bottom:6rem;position:relative;overflow-x:hidden}
+  body::before{content:"";position:absolute;top:-220px;left:50%;transform:translateX(-50%);
+    width:760px;height:560px;background:radial-gradient(ellipse at center,rgba(227,160,68,.20),rgba(227,160,68,0) 62%);
+    pointer-events:none;filter:blur(6px)}
+  .tag{position:fixed;top:14px;right:16px;font-family:var(--body);font-size:11px;letter-spacing:.16em;
+    text-transform:uppercase;color:var(--muted);background:rgba(21,17,11,.7);padding:5px 9px;border:1px solid var(--rule)}
+  .wrap{max-width:660px;margin:0 auto;padding:0 28px;position:relative;z-index:1}
+
+  header{padding:96px 0 30px}
+  .lamp{font-size:22px;color:var(--accent);filter:drop-shadow(0 0 14px rgba(227,160,68,.55));display:inline-block;transform:rotate(-4deg)}
+  .wordmark{font-family:var(--display);font-size:clamp(44px,7.5vw,68px);line-height:1.02;letter-spacing:-.005em;
+    margin:14px 0 0;color:#F6ECD7}
+  .kicker{font-family:var(--body);font-size:12px;letter-spacing:.32em;text-transform:uppercase;color:var(--accent);font-weight:500}
+  .deck{font-style:italic;font-size:20px;color:var(--soft);margin-top:18px;max-width:46ch}
+
+  .stream{margin-top:26px}
+  .story{padding:34px 0;border-bottom:1px solid var(--rule)}
+  .story:first-child{padding-top:8px}
+  .title{font-family:var(--display);font-size:27px;line-height:1.12;color:#F4E9D3}
+  .story:hover .title{color:var(--accent)}
+  .opening{font-size:19px;color:var(--soft);margin-top:11px;line-height:1.66}
+  .opening .drop{font-family:var(--display);color:var(--accent);font-size:1.05em}
+  .meta{margin-top:15px;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);display:flex;gap:16px}
+  .meta b{color:var(--accent-deep);font-weight:400}
+  .more{display:inline-block;margin-top:14px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+  .foot{margin-top:46px;text-align:center;color:var(--muted);font-size:13px}
+</style>
+</head>
+<body>
+<div class="tag">Direction 02 · Lamplight</div>
+<div class="wrap">
+  <header>
+    <div class="lamp">☾</div>
+    <div class="kicker" style="margin-top:10px">Short stories, read after dark</div>
+    <h1 class="wordmark">Crooked Nightstand</h1>
+    <p class="deck">A small, deliberate shelf of the stories worth keeping — best read late, by one lamp.</p>
+  </header>
+
+  <main class="stream">
+    <article class="story">
+      <h2 class="title">The Lighthouse Keeper</h2>
+      <p class="opening"><span class="drop">T</span>he morning the light went out, Aron was already awake, listening to the gulls argue over nothing. He had kept the lamp for forty years, and it had never once asked him for anything in return…</p>
+      <div class="meta"><b>Fiction</b><span>March 2026</span><span>12 min</span></div>
+      <span class="more">Read the story →</span>
+    </article>
+    <article class="story">
+      <h2 class="title">A Small Inheritance</h2>
+      <p class="opening">My aunt left me three things: a clock, a debt, and a warning I didn’t read until spring. By then the clock had stopped, and the debt had grown a quiet interest of its own…</p>
+      <div class="meta"><b>Fiction</b><span>February 2026</span><span>8 min</span></div>
+      <span class="more">Read the story →</span>
+    </article>
+    <article class="story">
+      <h2 class="title">Notes on Leaving</h2>
+      <p class="opening">We packed the house in the order we’d fallen in love with it: the kitchen, always, last. Every box was a small argument about what the years had actually been for…</p>
+      <div class="meta"><b>Fiction</b><span>January 2026</span><span>5 min</span></div>
+      <span class="more">Read the story →</span>
+    </article>
+    <article class="story">
+      <h2 class="title">Salt</h2>
+      <p class="opening">Grandmother salted everything, even grief, as if it too might keep through a long winter. The cellar was full of jars she would never open and never let anyone throw away…</p>
+      <div class="meta"><b>Fiction</b><span>November 2025</span><span>6 min</span></div>
+      <span class="more">Read the story →</span>
+    </article>
+  </main>
+  <p class="foot">⁂</p>
+</div>
+</body>
+</html>

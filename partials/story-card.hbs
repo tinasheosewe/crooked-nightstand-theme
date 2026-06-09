@@ -1,0 +1,16 @@
+<article class="story-card">
+    <div class="story-num" aria-hidden="true"></div>
+    <div class="story-card-body">
+        <h2 class="story-card-title"><a href="{{url}}">{{title}}</a></h2>
+        {{#if custom_excerpt}}
+            <p class="story-card-dek">{{custom_excerpt}}</p>
+        {{else}}
+            <p class="story-card-dek">{{excerpt characters="150"}}</p>
+        {{/if}}
+        <div class="story-card-meta">
+            {{#primary_tag}}<span class="fic">{{name}}</span>{{/primary_tag}}
+            <time datetime="{{date format="YYYY-MM-DD"}}">{{date format="MMMM YYYY"}}</time>
+            <span class="rt">{{reading_time}}</span>
+        </div>
+    </div>
+</article>

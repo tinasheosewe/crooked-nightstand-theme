@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Crooked Nightstand — Bindery, ink-blue (sturdier)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#EFEEE8; --ink:#191815; --soft:#45433D; --muted:#86837A;
+    --accent:#21395B; --accent-deep:#152741; --rule:#D6D3C9; --hair:#19181580;
+    --display:"Fraunces",Georgia,serif; --body:"Spectral",Georgia,serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--ink);font-family:var(--body);line-height:1.6;
+    -webkit-font-smoothing:antialiased;font-feature-settings:"onum","liga";padding-bottom:6rem}
+  .tag{position:fixed;top:14px;right:16px;font-family:var(--body);font-size:11px;letter-spacing:.16em;
+    text-transform:uppercase;color:var(--muted);background:rgba(239,238,232,.85);padding:5px 9px;border:1px solid var(--rule)}
+  .wrap{max-width:720px;margin:0 auto;padding:0 28px}
+
+  /* Monumental ruled nameplate */
+  header{padding:72px 0 34px}
+  .plate{text-align:center}
+  .kicker{font-family:var(--body);font-size:11.5px;letter-spacing:.36em;text-transform:uppercase;
+    color:var(--soft);font-weight:600;padding-bottom:14px}
+  .wordmark{font-family:var(--display);text-transform:uppercase;font-weight:600;
+    font-size:clamp(44px,9.5vw,82px);line-height:.9;letter-spacing:.005em;
+    font-variation-settings:"opsz" 144,"SOFT" 0,"WONK" 0;
+    border-top:2.5px solid var(--ink);border-bottom:2.5px solid var(--ink);padding:20px 0}
+  .wordmark .ns{color:var(--accent)}
+  .plate-foot{display:flex;align-items:center;justify-content:center;gap:18px;margin-top:13px;
+    font-family:var(--body);font-size:11.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--muted)}
+  .plate-foot .dia{color:var(--accent);font-size:9px}
+  .deck{font-family:var(--body);font-size:16px;color:var(--soft);margin-top:22px;text-align:center;letter-spacing:.01em}
+
+  .list{margin-top:30px;border-top:1px solid var(--ink)}
+  .story{display:grid;grid-template-columns:62px 1fr;gap:6px 22px;align-items:start;
+    padding:28px 0;border-bottom:1px solid var(--rule)}
+  .num{font-family:var(--display);font-size:34px;line-height:1;color:var(--accent);font-weight:560;
+    font-variation-settings:"opsz" 144,"SOFT" 0,"WONK" 0;text-align:center;padding-top:6px;letter-spacing:.02em}
+  .title{font-family:var(--display);font-size:29px;font-weight:560;line-height:1.06;letter-spacing:-.012em;
+    font-variation-settings:"opsz" 144,"SOFT" 0,"WONK" 0}
+  .story:hover .title{color:var(--accent)}
+  .dek{color:var(--soft);font-size:17px;margin-top:7px;max-width:44ch;line-height:1.5}
+  .meta{font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-top:13px;display:flex;gap:14px;flex-wrap:wrap}
+  .meta .fic{color:var(--accent);font-weight:600}
+  .foot{text-align:center;margin-top:44px;color:var(--accent);font-size:11px;letter-spacing:.3em}
+</style>
+</head>
+<body>
+<div class="tag">Bindery · sturdier</div>
+<div class="wrap">
+  <header>
+    <div class="plate">
+      <div class="kicker">A Curated Shelf of Short Fiction</div>
+      <h1 class="wordmark">Crooked<br><span class="ns">Nightstand</span></h1>
+      <div class="plate-foot"><span>Est. MMXXVI</span><span class="dia">◆</span><span>No. 1–24</span></div>
+    </div>
+    <p class="deck">The stories worth keeping — chosen, not collected.</p>
+  </header>
+
+  <main class="list">
+    <article class="story">
+      <div class="num">I</div>
+      <div>
+        <h2 class="title">The Lighthouse Keeper</h2>
+        <p class="dek">The morning the light went out, Aron was already awake, listening to the gulls argue over nothing.</p>
+        <div class="meta"><span class="fic">Fiction</span><span>March 2026</span><span>12 min</span></div>
+      </div>
+    </article>
+    <article class="story">
+      <div class="num">II</div>
+      <div>
+        <h2 class="title">A Small Inheritance</h2>
+        <p class="dek">My aunt left me three things: a clock, a debt, and a warning I didn’t read until spring.</p>
+        <div class="meta"><span class="fic">Fiction</span><span>February 2026</span><span>8 min</span></div>
+      </div>
+    </article>
+    <article class="story">
+      <div class="num">III</div>
+      <div>
+        <h2 class="title">Notes on Leaving</h2>
+        <p class="dek">We packed the house in the order we’d fallen in love with it: the kitchen, always, last.</p>
+        <div class="meta"><span class="fic">Fiction</span><span>January 2026</span><span>5 min</span></div>
+      </div>
+    </article>
+    <article class="story">
+      <div class="num">IV</div>
+      <div>
+        <h2 class="title">The Wrong Train</h2>
+        <p class="dek">It was the wrong train, but it was going somewhere, and that felt like enough that night.</p>
+        <div class="meta"><span class="fic">Fiction</span><span>December 2025</span><span>15 min</span></div>
+      </div>
+    </article>
+    <article class="story">
+      <div class="num">V</div>
+      <div>
+        <h2 class="title">Salt</h2>
+        <p class="dek">Grandmother salted everything, even grief, as if it too might keep through a long winter.</p>
+        <div class="meta"><span class="fic">Fiction</span><span>November 2025</span><span>6 min</span></div>
+      </div>
+    </article>
+  </main>
+  <p class="foot">◆ ◆ ◆</p>
+</div>
+</body>
+</html>

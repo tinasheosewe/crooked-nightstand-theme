@@ -1,0 +1,36 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+  body{margin:0;font-family:-apple-system,system-ui,sans-serif;background:#cfcabb;padding:48px;display:flex;gap:48px;flex-wrap:wrap;align-items:flex-start}
+  .ico{display:inline-block;line-height:0}
+  .label{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#5a564d;margin-top:10px;text-align:center}
+  .sizes{display:flex;gap:34px;align-items:flex-end;background:#efeee8;padding:34px 40px;border-radius:14px;box-shadow:0 10px 40px rgba(0,0,0,.15)}
+  .tabbar{width:340px;border-radius:12px;overflow:hidden;box-shadow:0 10px 40px rgba(0,0,0,.18)}
+  .tab{display:flex;align-items:center;gap:9px;padding:11px 14px;font-size:13px}
+  .tab.light{background:#dee1e6;color:#202124}
+  .tab.dark{background:#2b2b2e;color:#e8eaed}
+  .tab .fav{width:18px;height:18px;flex:none}
+  .tab .x{margin-left:auto;opacity:.5}
+  svg{display:block}
+</style>
+</head><body>
+
+  <div>
+    <div class="sizes">
+      <div><div class="ico"><svg width="16" height="16" viewBox="0 0 512 512"><rect width="512" height="512" rx="96" fill="#1A1A18"/><rect x="146" y="300" width="220" height="54" rx="13" fill="#F2EFE6"/><rect x="158" y="238" width="196" height="54" rx="13" fill="#F2EFE6"/><rect x="166" y="161" width="180" height="54" rx="13" fill="#E84A7F" transform="rotate(-9 256 188)"/></svg></div><div class="label">16</div></div>
+      <div><div class="ico"><svg width="32" height="32" viewBox="0 0 512 512"><rect width="512" height="512" rx="96" fill="#1A1A18"/><rect x="146" y="300" width="220" height="54" rx="13" fill="#F2EFE6"/><rect x="158" y="238" width="196" height="54" rx="13" fill="#F2EFE6"/><rect x="166" y="161" width="180" height="54" rx="13" fill="#E84A7F" transform="rotate(-9 256 188)"/></svg></div><div class="label">32</div></div>
+      <div><div class="ico"><svg width="64" height="64" viewBox="0 0 512 512"><rect width="512" height="512" rx="96" fill="#1A1A18"/><rect x="146" y="300" width="220" height="54" rx="13" fill="#F2EFE6"/><rect x="158" y="238" width="196" height="54" rx="13" fill="#F2EFE6"/><rect x="166" y="161" width="180" height="54" rx="13" fill="#E84A7F" transform="rotate(-9 256 188)"/></svg></div><div class="label">64</div></div>
+      <div><div class="ico"><svg width="128" height="128" viewBox="0 0 512 512"><rect width="512" height="512" rx="96" fill="#1A1A18"/><rect x="146" y="300" width="220" height="54" rx="13" fill="#F2EFE6"/><rect x="158" y="238" width="196" height="54" rx="13" fill="#F2EFE6"/><rect x="166" y="161" width="180" height="54" rx="13" fill="#E84A7F" transform="rotate(-9 256 188)"/></svg></div><div class="label">128</div></div>
+    </div>
+  </div>
+
+  <div style="display:flex;flex-direction:column;gap:20px">
+    <div class="tabbar">
+      <div class="tab light"><svg class="fav" viewBox="0 0 512 512"><rect width="512" height="512" rx="96" fill="#1A1A18"/><rect x="146" y="300" width="220" height="54" rx="13" fill="#F2EFE6"/><rect x="158" y="238" width="196" height="54" rx="13" fill="#F2EFE6"/><rect x="166" y="161" width="180" height="54" rx="13" fill="#E84A7F" transform="rotate(-9 256 188)"/></svg><span>Crooked Nightstand</span><span class="x">×</span></div>
+    </div>
+    <div class="tabbar">
+      <div class="tab dark"><svg class="fav" viewBox="0 0 512 512"><rect width="512" height="512" rx="96" fill="#1A1A18"/><rect x="146" y="300" width="220" height="54" rx="13" fill="#F2EFE6"/><rect x="158" y="238" width="196" height="54" rx="13" fill="#F2EFE6"/><rect x="166" y="161" width="180" height="54" rx="13" fill="#E84A7F" transform="rotate(-9 256 188)"/></svg><span>Crooked Nightstand</span><span class="x">×</span></div>
+    </div>
+  </div>
+
+</body></html>

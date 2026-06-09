@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Lighthouse Keeper — Crooked Nightstand</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Spectral:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#FAF9F5; --ink:#1A1A18; --soft:#3F3D38; --muted:#8E8A82;
+    --accent:#2C4A86; --accent-deep:#1F3766; --rule:#E5E2DA;
+    --display:"Fraunces",Georgia,serif; --body:"Spectral",Georgia,serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--ink);font-family:var(--body);line-height:1.78;
+    -webkit-font-smoothing:antialiased;font-feature-settings:"onum","liga"}
+  .tag{position:fixed;top:14px;right:16px;font-family:var(--body);font-size:11px;letter-spacing:.16em;
+    text-transform:uppercase;color:var(--muted);background:rgba(250,249,245,.85);padding:5px 9px;border:1px solid var(--rule);z-index:9}
+
+  /* reading progress */
+  .progress{position:fixed;top:0;left:0;height:2px;width:38%;background:var(--accent);z-index:8}
+
+  /* slim header */
+  .bar{position:sticky;top:0;background:rgba(250,249,245,.82);backdrop-filter:saturate(1.4) blur(8px);
+    border-bottom:1px solid var(--rule);z-index:5}
+  .bar-in{max-width:920px;margin:0 auto;padding:16px 28px;display:flex;align-items:center;justify-content:space-between}
+  .mark{font-family:var(--display);font-size:17px;font-weight:470;letter-spacing:-.01em}
+  .mark .crook{display:inline-block;transform:rotate(-2.2deg);color:var(--accent)}
+  .barnav{display:flex;gap:22px;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+  .barnav a{color:var(--muted);text-decoration:none}
+
+  .article{max-width:640px;margin:0 auto;padding:0 28px}
+  .phead{text-align:center;padding:70px 0 8px}
+  .pkicker{font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:var(--accent);font-weight:500}
+  .ptitle{font-family:var(--display);font-size:clamp(38px,6vw,56px);font-weight:420;line-height:1.04;
+    letter-spacing:-.02em;margin-top:16px;font-variation-settings:"opsz" 144}
+  .pdeck{font-family:var(--display);font-style:italic;font-size:20px;color:var(--soft);margin-top:16px;font-weight:380}
+  .pmeta{margin-top:22px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);
+    display:flex;gap:16px;justify-content:center}
+  .pmeta .by{color:var(--soft)}
+
+  .rule-orn{display:flex;align-items:center;gap:16px;justify-content:center;margin:34px 0 40px;color:var(--accent)}
+  .rule-orn::before,.rule-orn::after{content:"";height:1px;width:70px;background:var(--rule);display:block}
+
+  .body{font-size:20px;line-height:1.8;color:#262420}
+  .body p{margin:0 0 1.5em}
+  .body p:first-of-type::first-letter{float:left;font-family:var(--display);font-weight:420;font-size:4.4em;
+    line-height:.78;padding:.04em .1em 0 0;margin:.02em .04em 0 0;color:var(--accent);font-variation-settings:"opsz" 144}
+  .body blockquote{margin:2em 0;padding-left:0;text-align:center;font-family:var(--display);font-style:italic;
+    font-size:25px;line-height:1.4;color:var(--accent-deep);font-weight:380}
+  .aster{text-align:center;margin:2.4em 0;color:var(--muted);letter-spacing:.6em;font-size:18px}
+  .end{text-align:center;margin:48px 0 12px;color:var(--accent);font-size:22px}
+  .pfoot{max-width:640px;margin:0 auto;padding:0 28px 90px;text-align:center}
+  .tags{display:flex;gap:8px;justify-content:center;margin-top:10px}
+  .pill{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);border:1px solid var(--rule);border-radius:100px;padding:4px 11px}
+  .nextup{margin-top:54px;padding-top:26px;border-top:1px solid var(--rule);text-align:left;display:flex;justify-content:space-between;gap:20px}
+  .nextup .lbl{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+  .nextup .t{font-family:var(--display);font-size:19px;margin-top:4px}
+  .nextup .t.r{text-align:right}
+</style>
+</head>
+<body>
+<div class="tag">The Bindery · reading view</div>
+<div class="progress"></div>
+
+<div class="bar"><div class="bar-in">
+  <span class="mark">Crooked <span class="crook">Nightstand</span></span>
+  <nav class="barnav"><a href="#">Stories</a><a href="#">About</a></nav>
+</div></div>
+
+<article class="article">
+  <div class="phead">
+    <div class="pkicker">Fiction · No. I</div>
+    <h1 class="ptitle">The Lighthouse Keeper</h1>
+    <p class="pdeck">A man, a lamp, and forty years of being left.</p>
+    <div class="pmeta"><span class="by">By the Keeper</span><span>March 2026</span><span>12 min</span></div>
+  </div>
+
+  <div class="rule-orn">❧</div>
+
+  <div class="body">
+    <p>The morning the light went out, Aron was already awake, listening to the gulls argue over nothing. He had kept the lamp for forty years, and in all that time it had never once asked him for anything in return — only oil, only patience, only the long climb up the spiral stair on the nights when his knees made their objections known.</p>
+    <p>He dressed in the dark, out of habit. The island had taught him early that a man who needs light to find his own coat has already lost some quiet argument with the sea.</p>
+    <p>Outside, the fog had come in close enough to touch. It moved the way grief moves: without hurry, and entirely certain of its welcome.</p>
+    <blockquote>“A lighthouse keeper learns to love a thing whose whole purpose is to be left.”</blockquote>
+    <div class="aster">⁂</div>
+    <p>By noon the supply boat still had not come, and Aron understood — in the wordless way the body understands weather — that it would not be coming at all. He set a second cup on the table anyway. Some habits are not for the living; they are simply for keeping the shape of a life intact.</p>
+    <p>He climbed the stair. He always climbed the stair. And at the top, where the great lamp sat cold for the first time in four decades, he did the only thing forty years had taught him to do with the dark: he sat down beside it, and he waited for it to need him again.</p>
+    <div class="end">❦</div>
+  </div>
+</article>
+
+<div class="pfoot">
+  <div class="tags"><span class="pill">Fiction</span><span class="pill">Coastal</span><span class="pill">Solitude</span></div>
+  <div class="nextup">
+    <div><div class="lbl">Previous</div><div class="t">Salt</div></div>
+    <div><div class="lbl">Next</div><div class="t r">A Small Inheritance</div></div>
+  </div>
+</div>
+</body>
+</html>

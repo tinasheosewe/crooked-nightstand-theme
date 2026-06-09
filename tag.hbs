@@ -1,0 +1,19 @@
+{{!< default}}
+
+<section class="archive-header">
+    {{#tag}}
+    <span class="archive-kicker">Collection</span>
+    <h1 class="archive-title">{{name}}</h1>
+    {{#if description}}<p class="archive-desc">{{description}}</p>{{/if}}
+    {{/tag}}
+</section>
+
+<section class="story-index">
+    <div class="story-list">
+        {{#foreach posts}}
+            {{> "story-card"}}
+        {{/foreach}}
+    </div>
+</section>
+
+{{pagination}}

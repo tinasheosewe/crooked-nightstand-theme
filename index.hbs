@@ -1,0 +1,16 @@
+{{!< default}}
+
+<section class="archive-header">
+    <span class="archive-kicker">The Collection</span>
+    <h1 class="archive-title">All Stories</h1>
+</section>
+
+<section class="story-index">
+    <div class="story-list">
+        {{#foreach posts}}
+            {{> "story-card"}}
+        {{/foreach}}
+    </div>
+</section>
+
+{{pagination}}

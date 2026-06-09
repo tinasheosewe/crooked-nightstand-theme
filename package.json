@@ -1,0 +1,64 @@
+{
+  "name": "crooked-nightstand",
+  "description": "Crooked Nightstand — a literary-press Ghost theme: numbered index, ink-blue accents, chiselled Fraunces, a distraction-free reading view.",
+  "version": "1.0.0",
+  "engines": {
+    "ghost": ">=5.0.0"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Crooked Nightstand",
+    "email": "hello@crookednightstand.com"
+  },
+  "keywords": [
+    "ghost-theme",
+    "literary",
+    "press",
+    "reading",
+    "stories"
+  ],
+  "config": {
+    "posts_per_page": 24,
+    "image_sizes": {
+      "xs": { "width": 160 },
+      "s": { "width": 480 },
+      "m": { "width": 800 },
+      "l": { "width": 1200 },
+      "xl": { "width": 2000 }
+    },
+    "card_assets": true,
+    "custom": {
+      "color_scheme": {
+        "type": "select",
+        "options": ["Light", "Dark", "Auto"],
+        "default": "Light",
+        "group": "homepage"
+      },
+      "masthead_kicker": {
+        "type": "text",
+        "default": "A Curated Shelf of Short Fiction",
+        "group": "homepage"
+      },
+      "masthead_intro": {
+        "type": "text",
+        "default": "Short stories worth staying up for.",
+        "group": "homepage"
+      },
+      "established": {
+        "type": "text",
+        "default": "2026",
+        "group": "homepage"
+      },
+      "drop_caps": {
+        "type": "boolean",
+        "default": true,
+        "group": "post"
+      },
+      "footer_signature": {
+        "type": "text",
+        "default": "",
+        "group": "post"
+      }
+    }
+  }
+}
