@@ -1,7 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Crooked Nightstand">
-  <rect width="512" height="512" rx="96" fill="#1A1A18"/>
+  <style>
+    .cn-bg   { fill: #F2EFE6; }
+    .cn-book { fill: #1A1A18; }
+    @media (prefers-color-scheme: dark) {
+      .cn-bg   { fill: #1A1A18; }
+      .cn-book { fill: #F2EFE6; }
+    }
+  </style>
+  <rect class="cn-bg" width="512" height="512" rx="96"/>
   <!-- a small, slightly crooked stack of books -->
-  <rect x="146" y="300" width="220" height="54" rx="13" fill="#F2EFE6"/>
-  <rect x="158" y="238" width="196" height="54" rx="13" fill="#F2EFE6"/>
+  <rect class="cn-book" x="146" y="300" width="220" height="54" rx="13"/>
+  <rect class="cn-book" x="158" y="238" width="196" height="54" rx="13"/>
   <rect x="166" y="161" width="180" height="54" rx="13" fill="#E84A7F" transform="rotate(-9 256 188)"/>
 </svg>

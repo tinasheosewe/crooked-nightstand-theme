@@ -164,6 +164,15 @@ button { font-family: inherit; }
 }
 .site-mark .accent { color: var(--accent); }
 
+/* Compact home logo — shown on phones while reading (see the ≤460 block) */
+.home-link {
+    position: absolute; left: clamp(1.25rem, 5vw, 2.5rem); top: 50%; transform: translateY(-50%);
+    display: none; align-items: center; color: var(--ink); z-index: 2;
+    opacity: 0; pointer-events: none; transition: opacity .2s var(--ease);
+}
+.home-link svg { display: block; width: 22px; height: 22px; }
+.home-link:hover { color: var(--accent); }
+
 .site-nav { display: flex; align-items: center; gap: clamp(1rem, 3vw, 1.9rem); }
 
 .nav-list {
@@ -567,4 +576,12 @@ button { font-family: inherit; }
     .header-now-title { font-size: .9rem; }
     .header-now-time { font-size: .58rem; }
     .plate-name { font-size: 2.25rem; }   /* keep the nameplate inside the screen */
+
+    /* While reading on a phone, reveal the compact home logo (fades in after the
+       wordmark fades out) and clear room for it so the title can't overlap. */
+    .home-link { display: flex; }
+    .site-header.show-context .home-link {
+        opacity: 1; pointer-events: auto; transition: opacity .22s var(--ease) .2s;
+    }
+    .site-header.show-context .header-now { padding-left: 2.9rem; }
 }

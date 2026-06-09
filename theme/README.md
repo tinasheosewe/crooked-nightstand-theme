@@ -24,6 +24,8 @@ line. Light/dark with a header toggle. Built for Ghost 5/6 — no code needed to
 - **Gentle scroll-reveal** of the index and large blocks — body text never animates.
 - **Drawn underlines** on index titles, prev/next, and prose links.
 - A soft entrance on hero/headers, and **keyboard ← / →** to move between stories.
+- **Phone home link** — while reading on a phone (where the nav is hidden), a compact logo
+  appears in the header that links home, so there's always a way back.
 
 The accent colour comes from **Settings → Design → Branding → Accent color** — set it to
 whatever you like (Ghost's default is a hot pink; a deeper rose reads more elegant).

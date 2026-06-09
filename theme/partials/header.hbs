@@ -3,6 +3,16 @@
     <div class="site-header-inner">
         <a class="site-mark" href="{{@site.url}}">Crooked <span class="accent">Nightstand</span></a>
 
+        {{!-- Compact logo that links home — appears on phones while reading (where the
+              wordmark + nav are hidden), so there's always a way back. --}}
+        <a class="home-link" href="{{@site.url}}" aria-label="Home">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <rect x="3.5" y="15" width="17" height="3.4" rx="1.3"/>
+                <rect x="4.8" y="10.4" width="14.4" height="3.4" rx="1.3"/>
+                <rect x="5.4" y="5.3" width="13.2" height="3.4" rx="1.3" transform="rotate(-10 12 7)"/>
+            </svg>
+        </a>
+
         <div class="header-now" data-header-now aria-hidden="true">
             <span class="header-now-title"></span>
             <span class="header-now-time"></span>

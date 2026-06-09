@@ -24,6 +24,10 @@ mockups/                     Design explorations & verification (not part of the
 | --- | --- | --- |
 | Accent | **Follows your Ghost Branding colour** (default fallback navy) | **Locked to navy** `#21395B` |
 | Favicon | Crooked book-stack, pink top (`#E84A7F`) | Crooked book-stack, blue top (`#5E82C8`) |
+
+Both favicons are **light** (paper background + ink books) to match the site, and the SVG
+adapts to dark-mode browser tabs automatically. The `favicon-512.png` is the light version
+you upload to Ghost.
 | Pick it if… | you want to set/tune the accent in Ghost admin | you want navy out of the box, no setup |
 
 Both are gscan-clean and Ghost 5/6 compatible.
