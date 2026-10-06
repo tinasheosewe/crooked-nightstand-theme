@@ -32,18 +32,14 @@ whatever you like (Ghost's default is a hot pink; a deeper rose reads more elega
 
 ## Install
 
-1. **Zip the theme** so `package.json` is at the *root* of the zip (the bundled
-   `crooked-nightstand.zip` already is — regenerate with):
-   ```bash
-   cd CuratedStories
-   zip -r crooked-nightstand.zip . \
-     -x ".*" -x "__MACOSX*" -x "node_modules/*" -x "mockups/*" -x "*.zip"
-   ```
+1. **Zip the theme** so `package.json` is at the *root* of the zip. The pre-built
+   editions in `../dist/` already are; `../build.sh` regenerates both from this folder.
 2. Ghost admin → **Settings → Design → Change theme → Upload theme** → choose the
    zip → **Activate**.
 3. **Settings → General → Title** → `Crooked Nightstand`.
-4. **Settings → Design → Branding** → set the **Accent color** to your navy
-   (default `#21395B`). It drives numerals, the drop cap, links, rules and marks.
+4. **Settings → Design → Branding** → set the **Accent color** (pink edition; the blue
+   edition is locked to navy `#21395B`). It drives numerals, the drop cap, links, rules
+   and marks.
 
 ## Customise (all in Ghost admin — no code)
 
@@ -80,7 +76,7 @@ site, update it in those two files.
 | `partials/` | Header, footer, nav, story card, pagination |
 | `assets/css/screen.css` | All styling + design tokens (top of file) |
 | `assets/js/main.js` | Theme toggle, reading progress, header state |
-| `mockups/` | Design explorations — **not part of the theme**; excluded from the zip |
+| `../mockups/` | Design explorations — **not part of the theme**; kept outside this folder, so never in the zip |
 
 ## Local development
 

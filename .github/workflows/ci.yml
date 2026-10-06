@@ -1,0 +1,29 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  gscan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Validate the theme source for Ghost 6
+        run: npx --yes gscan@6.6.1 theme
+      - name: Validate the theme source for Ghost 5
+        run: npx --yes gscan@6.6.1 theme --v5
+      - name: Validate both zips for Ghost 6 and Ghost 5
+        run: |
+          for zip in dist/*.zip; do
+            npx --yes gscan@6.6.1 -z "$zip"
+            npx --yes gscan@6.6.1 -z "$zip" --v5
+          done
